@@ -19,7 +19,7 @@ async function CreateFolder(req, res) {
       } else {
         return res.send({
           message: "File uploaded successfully",
-          url: `https://e-commerce-back-end-900p.onrender.com//assets/${folder_name}/${file.filename}`,
+          url: `https://e-commerce-back-end-900p.onrender.com/assets/${folder_name}/${file.filename}`,
         });
       }
     } else {
