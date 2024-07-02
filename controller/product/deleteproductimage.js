@@ -11,7 +11,7 @@ async function DeleteImageServer(req, res) {
       });
     }
 
-    const HOST = process.env.PORT;
+    const HOST = "https://e-commerce-back-end-900p.onrender.com";
     const filename = String(file).split(HOST)[1];
     fs.unlink("." + filename, function (err) {
       if (err) {

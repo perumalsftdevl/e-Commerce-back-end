@@ -10,7 +10,7 @@ module.exports = DeleteBanner = async (req, res) => {
     });
 
     if (isCategoryAvailable.length > 0) {
-      const HOST = process.env.PORT;
+      const HOST = "https://e-commerce-back-end-900p.onrender.com";
       console.log(isCategoryAvailable);
       const file = isCategoryAvailable[0].url;
       const filename = String(file).split(HOST)[1];
