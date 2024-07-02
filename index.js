@@ -10,7 +10,10 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:3000"],
+    origin: [
+      "https://perumalsftdevls-e-commerce-front-end.vercel.app",
+      "http://localhost:3000",
+    ],
     credentials: true,
   })
 );
