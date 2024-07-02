@@ -3,7 +3,7 @@ const bannerModel = require("../../models/banner");
 const addBanner = async (req, res) => {
   try {
     const file = req.file;
-    const url = `${process.env.PORT}/assets/Banner/${file.filename}`;
+    const url = `https://e-commerce-back-end-900p.onrender.com//assets/Banner/${file.filename}`;
 
     const existingURL = await bannerModel.find();
 
