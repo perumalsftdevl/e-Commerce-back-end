@@ -13,7 +13,7 @@ async function CreateFolder(req, res) {
         fs.mkdirSync(`./assets/${folder_name}`, { recursive: true });
         res.send({
           message: "File uploaded successfully",
-          url: `https://e-commerce-back-end-900p.onrender.com//assets/${folder_name}/${file.filename}`,
+          url: `https://e-commerce-back-end-900p.onrender.com/assets/${folder_name}/${file.filename}`,
         });
         return res.send(`Folder '${folder_name}' created successfully.`);
       } else {
