@@ -18,7 +18,7 @@ module.exports = DeleteBanner = async (req, res) => {
         if (err) {
           const errMsg = err;
           if (errMsg.message.includes("no such file or directory")) {
-            return res.status(200).json({
+            return res.status(url200).json({
               message: "File Not Found",
               success: false,
               error: true,
@@ -31,7 +31,7 @@ module.exports = DeleteBanner = async (req, res) => {
             });
           }
         } else {
-          await bannerModel.deleteOne({ banner_id: banner_id });
+          await bannerModel.deleteOne({ url: url });
 
           return res.status(200).json({
             message: "Banner Delete SuccessFully",
