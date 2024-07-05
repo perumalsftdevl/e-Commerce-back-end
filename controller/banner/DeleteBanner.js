@@ -3,10 +3,10 @@ const fs = require("fs");
 
 module.exports = DeleteBanner = async (req, res) => {
   try {
-    const banner_id = req.query.banner_id;
+    const url = req.query.url;
 
     const isCategoryAvailable = await bannerModel.find({
-      banner_id: banner_id,
+      url: url,
     });
 
     if (isCategoryAvailable.length > 0) {
